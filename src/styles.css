@@ -1,0 +1,191 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+.myform {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  padding: 20px;
+  background-color: grey;
+  border-radius: 12px;
+  margin: 0 auto;
+  margin-top: 150px;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.274);
+}
+
+.myform_label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.myform_input {
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.btn {
+  width: 100px;
+  margin: 0 auto;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.invalid-feedback {
+  position: absolute;
+  bottom: 2px;
+  font-size: 12px;
+  color: rgba(187, 21, 21, 0.863);
+}
+
+.is-invalid {
+  border: 1px solid tomato;
+}
+/* FIXED HEADER ANIMATION GREENSOCK */
+.header {
+  position: fixed;
+  width: 100%;
+  transition: ease 0.4s;
+  border-bottom: 1px solid grey;
+  height: 100px;
+}
+.header--scrolled {
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.267);
+}
+/* LOGO GREENSOCK */
+
+#logo {
+  padding: 20px;
+}
+
+.img {
+  display: block;
+  width: 150px;
+  cursor: pointer;
+}
+
+/* PEOPLE GREENSOCK */
+
+.people {
+  padding-top: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.title {
+  font-size: 40px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.people-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  margin: 0 auto;
+}
+.people-item {
+  margin-bottom: 40px;
+  width: 150px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  margin-right: 20px;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.37);
+}
+
+.people-item__title {
+  margin-bottom: 15px;
+}
+
+.main,
+.main div {
+  width: 100%;
+  height: 100%;
+  max-height: 880px;
+  overflow: hidden;
+  background: #000;
+  position: absolute;
+}
+
+/* SERVICES GREENSOCK */
+.services {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 120px;
+  border-top: 1px solid black;
+}
+.services-title {
+  text-align: left;
+  margin-left: 165px;
+}
+
+.service-descr {
+  font-size: 16px;
+  line-height: 23px;
+  color: #777777;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.services-cont {
+  padding-top: 70px;
+}
+.service-cont__text {
+  width: 386px;
+  margin-right: 150px;
+}
+.service {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin-bottom: 60px;
+}
+.service-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #222222;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.service-img {
+  width: 722px;
+  height: 480px;
+  background-color: grey;
+}
+
+.sec {
+  margin-right: 0;
+  margin-left: 120px;
+}
